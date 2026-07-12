@@ -53,5 +53,8 @@
   ],
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "volta": {
+    "node": "24.18.0"
+  }
 }
