@@ -1,1 +1,1 @@
-export { default as HomeVue } from "./HomeView.vue";
+export { default as HomeView } from "./HomeView.vue";
