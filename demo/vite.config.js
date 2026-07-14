@@ -8,11 +8,15 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+    },
   },
   server: {
     host: true,
-    port: 8081
-  }
-})
+    port: 8081,
+    watch: {
+      usePolling: true,
+      interval: 1000, // проверять каждую секунду
+    },
+  },
+});
