@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="counter">
     <button @click="decrement">-</button>
 
     <span> Current value: {{ count }} </span>
@@ -30,18 +30,29 @@ const increment = () => {
 body {
   padding: 50px;
 }
+</style>
 
-div {
+<style lang="scss" scoped>
+.counter {
   display: flex;
   gap: 1em;
   align-items: center;
   width: fit-content;
-}
 
-button {
-  padding: 3px 1em;
-  border: 2px solid deepskyblue;
-  font-family: inherit;
-  background: white;
+  button {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    background: #dd0000;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background: #ff0000;
+    }
+  }
 }
 </style>
